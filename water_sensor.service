@@ -1,0 +1,11 @@
+[Unit]
+Description=Water Sensor Prometheus Metrics
+After=network.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/arthur/water_sensor/venv/bin/python /home/arthur/water_sensor/water_sensor.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
