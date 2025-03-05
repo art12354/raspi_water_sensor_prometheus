@@ -37,3 +37,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable water_sensor.service
 sudo systemctl start water_sensor.service
 ```
+
+Sensor data will now be available at http://{raspi_ip_address}:8000/metrics.
